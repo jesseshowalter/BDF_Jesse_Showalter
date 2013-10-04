@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>test</title>
+	<title>BDF - Jesse Showalter</title>
 	<link rel="stylesheet" href="main.css">
 </head>
 <body>
@@ -10,6 +10,7 @@
 			echo "Hello everyone, the current time in Hawaii is" . " " . date("D M d, Y G:i a") ;
 			?>
 		</p>
+		<p>again hello</p>
 	</div>
 </body>
 </html>
