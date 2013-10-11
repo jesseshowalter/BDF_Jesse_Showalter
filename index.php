@@ -10,7 +10,26 @@
 			echo "Hello everyone, the current time in Hawaii is" . " " . date("D M d, Y G:i a") ;
 			?>
 		</p>
-		<p>again hello</p>
+<!--
+		<?php 
+			$dsn = "mysql:host=127.0.0.1;port=8889;dbname=bdf1310";
+			$db_user = "root";
+			$db_pass = "root";
+			$db = new \PDO($dsn, $db_user, $db_pass);
+			$statement = $db->prepare("
+				SELECT taskTitle, taskDescription
+				FROM taskInfo
+			");
+			if ($statement->execute()){
+				$rows = $statement->fetchAll(\PDO::FETCH_ASSOC);
+				//var_dump($statement);
+				foreach ($rows as $num => $row) {
+					echo "taskTitle";
+				};
+
+			};
+		 ?>
+-->
 	</div>
 </body>
 </html>
