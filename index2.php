@@ -62,13 +62,16 @@
 
 		<header>
 			<h1><a href="#"><span>ME</span>DO</a></h1>
+			<h2>A simple task list</h2>
 		</header>
 
 		<!-- Features -->	
-		
 
 		<article id="examples">
-			<h3>A simple todo app for the nerd on the go</h3>
+			<h3>Add New Task</h3>
+			<a class="button" href="#">Click to add</a>
+
+
 			<ul>
 
 
@@ -98,6 +101,7 @@
 
 			</ul>
 		</article>
+
 
 		
 		<footer>
