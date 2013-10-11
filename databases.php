@@ -18,8 +18,8 @@
 	// 2. Perform databse query
 	$query = "SELECT * ";
 	$query .= "FROM subjects ";
-	$query .= "WHERE visible = 1 ";
-	$query .= "ORDER BY position ASC";
+	//$query .= "WHERE visible = 1 ";
+	//$query .= "ORDER BY position ASC";
 
 
 	$result = mysqli_query($connection, $query);
@@ -41,14 +41,17 @@
 			echo "Hello everyone, the current time in Hawaii is" . " " . date("D M d, Y G:i a") ;
 			?>
 		</p>
+		<ul>
 		<?php  
 			// 3. Use return data (if any)
-			while($row = mysqli_fetch_row($result)) {
+			while($row = mysqli_fetch_assoc($result)) {
 				// output data from each row
-				var_dump($row);
-				echo "<hr />";
+		?>
+			<li><?php echo $row["menu_name"]; ?></li>
+		<?php 
 			};
 		?>
+		</ul>
 		<?php  
 			// 4. Release returned data
 			mysqli_free_result($result);
