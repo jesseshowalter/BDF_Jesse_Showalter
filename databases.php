@@ -16,17 +16,17 @@
 
 <?php  
 	// 2. Perform databse query
-	$query = "SELECT * ";
-	$query .= "FROM subjects ";
-	//$query .= "WHERE visible = 1 ";
-	//$query .= "ORDER BY position ASC";
+	$honeydo = "SELECT * ";
+	$honeydo .= "FROM taskInfo ";
+	//$honeydo .= "WHERE taskGroup_id = 1 ";
 
 
-	$result = mysqli_query($connection, $query);
+	$result = mysqli_query($connection, $honeydo);
 	// test if there was a query error
 	if(!$result){
 		die("Database query failed.");
 	}
+
 ?>
 <!DOCTYPE>
 <html>
@@ -36,18 +36,15 @@
 </head>
 <body>
 	<div class="wrapper">
-		<h1>Jesse Showalter</h1>
-		<p><?php 
-			echo "Hello everyone, the current time in Hawaii is" . " " . date("D M d, Y G:i a") ;
-			?>
-		</p>
+		<h1>MeDo</h1>
+		<h2>My Honey Do List</h2>
 		<ul>
 		<?php  
 			// 3. Use return data (if any)
-			while($row = mysqli_fetch_assoc($result)) {
+			while($taskList = mysqli_fetch_assoc($result)) {
 				// output data from each row
 		?>
-			<li><?php echo $row["menu_name"]; ?></li>
+			<li><a href="#"><?php echo $taskList["taskTitle"]; ?></a></li>
 		<?php 
 			};
 		?>
