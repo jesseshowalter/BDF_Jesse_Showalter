@@ -106,43 +106,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-position: 0 -264px;
 }
 
-/**
- * Profound Grid
- * 
- * Built in Sass (SCSS) this responsive/adaptive grid supports both fixed and fluid layouts, 
- * relative and fixed gutters, as well as your choice of semantic markup or generic '.grid-x' classes.
- * 
- * The biggest difference to other grid systems is the use of negative margins for column
- * placements, avoiding the subpixel rounding issues that usually break/uglify fluid layouts
- * in some browsers.
- * 
- * Nested columns are supported too, without having to reset the grid on each level. 
- *
- * Credits/Inspiration:
- * -------------------
- * Semantic Grid: http://www.semantic.gs
- * Susy: http://susy.oddbird.net
- * Negative Grid: http://chrisplaneta.com/freebies/negativegrid-fluid-css-grid-by-chris-planeta/
- *
- * @author Profound Creative Studio
- * @url http://www.profoundgrid.com
- * @url http://www.weareprofound.com 
- */
-/**
- * Clearfix
- */
-/**
- * Legacy Clearfix
- */
-/**
- * Establish the grid-containing element.
- */
-/**
- * Align an element to the grid.
- */
-/**
- * Apply to any column to make it the last one of the current row.
- */
 * {
   outline: none;
 }
@@ -519,6 +482,10 @@ header section ul li:nth-child(1n+1) {
   clear: both;
   overflow: hidden;
   *zoom: 1;
+}
+
+.stage{
+	min-height:550px;
 }
 
 @media screen and (min-width: 460px) {
@@ -1041,3 +1008,53 @@ footer div #meta div:nth-child(2) a:nth-child(2) {
     text-align: right;
   }
 }
+
+
+
+
+.taskDetails{
+	width:50%;
+	padding:20px;
+	margin:60px auto !important;
+	background:#FFF;
+	box-shadow:0 6px 0 #CCC;
+	-webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+         -o-border-radius: 4px;
+            border-radius: 4px;
+}
+
+.taskDetails h2{
+	font-family: 'Raleway', Arial, sans-serif;
+	font-weight: 900;
+	font-size: 21px;
+	padding-top: 25px;
+	padding-bottom: 13px;
+	color: #454545;
+	display: inline-block;
+	padding-bottom: 3px;
+	margin-bottom: 10px;
+}
+
+.taskDetails h4{
+	text-transform:uppercase;
+	font-family: 'Raleway', Arial, sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	color: #b7b7b7;
+}
+
+.taskDetails p{
+	font-size: 16px;
+	line-height: 22px;
+	color: #636363;
+	font-family: Arial, sans-serif;
+	font-weight: normal;
+	display: block;
+	padding-bottom: 30px;
+}
+
+
+
+
