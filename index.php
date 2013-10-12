@@ -1,19 +1,4 @@
-<?php 
-	// 1. Create a database connection
-	$dbhost = "localhost";
-	$dbuser = "root";
-	$dbpass = "root";
-	$dbname = "bdf1310";
-	$connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
-	// Test if connection occured.
-	if(mysqli_connect_errno()){
-		die("Database connection failed: " . 
-			mysqli_connect_error() . 
-			" (" . mysqli_connect_errno() . ")"
-		);
-	}
-?>
-
+<?php include ("models/OpenConnection.php"); ?>
 <?php  
 	// 2. Perform databse query
 	$honeydo = "SELECT * ";
@@ -29,6 +14,7 @@
 
 ?>
 <!DOCTYPE html>
+
 <html lang="en">
 
 	<head>
@@ -63,7 +49,7 @@
 
 		<!-- Features -->	
 
-		<article id="examples">
+		<article id="examples" class="stage">
 			<h3>Add New Task</h3>
 			<a class="button" href="#">Click to add</a>
 
@@ -77,8 +63,10 @@
 					while($taskList = mysqli_fetch_assoc($result)) {
 						// output data from each row
 				?>
+				<?php $link_name = "Details"; ?>
+				<?php $id = task; ?>
 					<li>
-						<a href="#">
+						<a href="details.php?id=<?php echo $id; ?>">
 							<img src="<?php echo $taskList["taskPhoto"]; ?>" />
 							<h4><?php echo $taskList["taskTitle"]; ?></h4>
 							<span><?php echo $taskList["taskDescription"]; ?></span>
@@ -114,7 +102,4 @@
 </html>
 
 
-<?php 
-	// 5. Close databse connection
-	mysqli_close($connection);
-?>
+<?php include ("models/CloseConnection.php"); ?>
