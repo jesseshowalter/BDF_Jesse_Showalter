@@ -3,7 +3,7 @@
 	// 2. Perform databse query
 	$honeydo = "SELECT * ";
 	$honeydo .= "FROM taskInfo ";
-	//$honeydo .= "WHERE taskGroup_id = 1 ";
+	//$honeydo .= "WHERE taskGroup_id = 3 ";
 
 
 	$result = mysqli_query($connection, $honeydo);
