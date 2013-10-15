@@ -47,8 +47,12 @@ $user_id = $match_value['id'];
 			}
 		}
 		?>
-
 		<ul>
+			<legend class="shorter">Your Current Tasks </legend>
+		</ul>
+		<ul>
+
+
 			<?php
 			$document_get = mysql_query("SELECT * FROM todolist WHERE user_id='$user_id' ORDER BY id DESC");
 			while($match_value = mysql_fetch_array($document_get)) { 
