@@ -30,7 +30,7 @@
 		?>
 		
 		
-		<form action="models/auth_check.php" method="post" class="form-signin">
+		<form action="auth_check.php" method="post" class="form-signin">
 			<input name="username" type="text" class="input-block-level" placeholder="Username">
 			<input name="password" type="password" class="input-block-level" placeholder="Password"> 
 			<button class="button" type="submit">Sign in</button>	
