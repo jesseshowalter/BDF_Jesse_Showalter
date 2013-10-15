@@ -405,7 +405,7 @@ header h1 {
   color: #252525;
   text-align: center;
   padding: 0;
-  margin-left:20px;
+  margin-left:0;
 }
 header h1 span {
   font-weight: 900;
@@ -415,6 +415,15 @@ header h1 a {
   text-decoration: none;
   color: #252525;
   text-align: center;
+  padding:30px;
+  background:transparent;
+}
+header h1 a:hover {
+  text-decoration: none;
+  background: #FFF;
+  -webkit-transition:all 0.3s;
+     -moz-transition:all 0.3s;
+          transition:all 0.3s; 
 }
 header .seperator {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -1112,6 +1121,7 @@ float:right;
 
 ul.controls li a:hover{
 	background:#FFFFFF;
+  color:#005580;
   -webkit-transition:all 0.3s;
      -moz-transition:all 0.3s;
           transition:all 0.3s; 
