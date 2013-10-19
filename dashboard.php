@@ -2,7 +2,7 @@
 //place this code on top of all the pages which you need to authenticate
 
 //--- Authenticate code begins here ---
-session_start();
+session_start(); 
 //checks if the login session is true
 if(!session_is_registered(username)){
 header("location:index.php");
@@ -20,8 +20,10 @@ $delete = $_GET['delete'];
 $document_get = mysql_query("SELECT * FROM users WHERE username='$username'");
 $match_value = mysql_fetch_array($document_get);
 $fullname = $match_value['fullname'];
-$location = $match_value['location'];
 $gender = $match_value['gender'];
+$location = $match_value['location'];
+$user_id = $match_value['id'];
+
 $user_id = $match_value['id'];
 ?>
 	
