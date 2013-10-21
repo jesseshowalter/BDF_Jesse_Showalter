@@ -53,7 +53,11 @@ PHP Login Script - For more tutorials visit tutbuzz.com
 			</ul>       
 		</div>
 	</header>
+
+		
+<!--
   <div class="success_msg" style="display:none"> Saved! </div>
+ -->
   
     <div class="container-narrow">
 	

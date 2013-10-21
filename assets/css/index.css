@@ -1145,10 +1145,11 @@ ul.controls li a:hover{
 
 #examples ul li{
   padding:10px;
+    background:#F0F0F0 !important;
 }
 
 #examples ul li:hover{
-  background:#F0F0F0 !important;
+
   -webkit-transition:all 0.3s;
      -moz-transition:all 0.3s;
           transition:all 0.3s; 
@@ -1205,7 +1206,10 @@ ul.controls li a:hover{
   display:none;
 }
 
-
+.deleteButton{
+  padding:10px 0;
+  color:#FFF !important;
+}
 
 
 

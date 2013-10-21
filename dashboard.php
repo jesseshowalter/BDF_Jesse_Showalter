@@ -49,6 +49,12 @@ $user_id = $match_value['id'];
 			}
 		}
 		?>
+
+		<div class="alert alert-success success_msg" style="display:none">
+			<button type="button" class="close" data-dismiss="alert">&times;</button>
+			<strong> Successfully Updated! </strong>. 
+		</div>
+		
 		<ul>
 			<legend class="shorter">Your Current Tasks </legend>
 		</ul>
@@ -63,7 +69,10 @@ $user_id = $match_value['id'];
 				
 			
 		
-				<h4><textarea id="<?php echo $match_value['id']; ?>" class=" task_description task_title <?php echo $match_value['id']; ?>" onchange="javascript:getText(this)" <?php if($match_value['check_value'] == 'true') { echo 'disabled '; echo ' style="text-decoration:line-through"'; } ?> > <?php echo $match_value['description']; ?></textarea></h4>
+				<h4><textarea id="<?php echo $match_value['id']; ?>" class=" task_description task_title <?php echo $match_value['id']; ?>" onchange="javascript:getText(this)" <?php if($match_value['check_value'] == 'true') { echo 'disabled '; echo ' style="text-decoration:line-through"'; } ?> ><?php echo $match_value['description']; ?></textarea>
+				</h4>
+				
+				<a class="button deleteButton" href="?delete=<?php echo $match_value['id']; ?>"> Complete </a>
 			</li>
 			<?php
 			}
