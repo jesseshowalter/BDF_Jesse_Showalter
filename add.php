@@ -34,7 +34,7 @@ $(function(){
  $('p#add_field').click(function(){
  counter += 1;
  $('#container').append(
- '<strong>List No. ' + counter + '</strong><br />'
+ '<strong>Task No. ' + counter + '</strong><br />'
  + '<textarea id="field_' + counter + '" name="dynfields[]' + '"></textarea><br />' );
 
  });

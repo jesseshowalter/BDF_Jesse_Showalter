@@ -61,10 +61,9 @@ $user_id = $match_value['id'];
 			?>
 			<li>
 				
-				<h4><textarea id="<?php echo $match_value['id']; ?>" class=" task_title extend <?php echo $match_value['id']; ?>" onchange="javascript:getText(this)" <?php if($match_value['check_value'] == 'true') { echo 'disabled '; echo ' style="text-decoration:line-through"'; } ?> > <?php echo $match_value['title']; ?></textarea>
-				</h4>
-
-				<textarea id="<?php echo $match_value['id']; ?>" class=" task_description <?php echo $match_value['id']; ?>" onchange="javascript:getText(this)" <?php if($match_value['check_value'] == 'true') { echo 'disabled '; echo ' style="text-decoration:line-through"'; } ?> > <?php echo $match_value['description']; ?></textarea>
+			
+		
+				<h4><textarea id="<?php echo $match_value['id']; ?>" class=" task_description task_title <?php echo $match_value['id']; ?>" onchange="javascript:getText(this)" <?php if($match_value['check_value'] == 'true') { echo 'disabled '; echo ' style="text-decoration:line-through"'; } ?> > <?php echo $match_value['description']; ?></textarea></h4>
 			</li>
 			<?php
 			}
