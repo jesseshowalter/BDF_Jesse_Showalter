@@ -684,7 +684,7 @@ header section ul li:nth-child(1n+1) {
   #examples ul li {
     float: left;
     margin-right: -100%;
-    width: 22.11%;
+    width: 20.11%;
   }
   #examples ul li span {
     padding-bottom: 0px;
@@ -1153,6 +1153,9 @@ ul.controls li a:hover{
       -ms-border-radius: 4px;
        -o-border-radius: 4px;
           border-radius: 4px;
+          -webkit-transition:all 0.3s;
+     -moz-transition:all 0.3s;
+          transition:all 0.3s;
 
 }
 
@@ -1181,6 +1184,9 @@ ul.controls li a:hover{
   padding:0 !important;
   margin: 0 !important;
   height:auto;
+  -webkit-transition:all 0.3s;
+     -moz-transition:all 0.3s;
+          transition:all 0.3s;
    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
      -moz-box-sizing: border-box;    /* Firefox, other Gecko */
      box-sizing: border-box;         /* Opera/IE 8+ */
@@ -1196,15 +1202,19 @@ ul.controls li a:hover{
 
 #examples ul li textarea.task_title {
   font-family: 'Raleway', Arial, sans-serif;
-  font-weight: 900;
+  font-weight: 500;
   font-size: 21px;
   padding:5px 0;
   min-height: 25px !important;
   margin: 0px;
   height:auto;
   color: #454545;
+  line-height:30px;
+  text-transform: capitalize;
   display: inline-block;
-
+  -webkit-transition:all 0.3s;
+     -moz-transition:all 0.3s;
+          transition:all 0.3s;
 } 
 
 #examples ul li textarea.task_description{
@@ -1218,8 +1228,23 @@ ul.controls li a:hover{
 .deleteButton{
   padding:10px 0;
   color:#FFF !important;
+  margin-bottom:20px !important;
+  font-size: 90%;
 }
 
+#examples ul li{
+  -webkit-transition:all 1s;
+     -moz-transition:all 1s;
+          transition:all 1s; 
+}
+
+#examples ul li:hover{
+  border:1px solid #4285F4;
+
+  -webkit-transition:all 1s;
+     -moz-transition:all 1s;
+          transition:all 1s; 
+}
 
 
 

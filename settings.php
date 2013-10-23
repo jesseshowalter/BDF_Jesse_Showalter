@@ -59,8 +59,11 @@ $gender = $match_value['gender'];
   <fieldset>
     <legend><?php echo $username; ?>'s Settings</legend>
 	
+  <label>User Name *</label>
+    <input name="username" type="text" placeholder="Type new username" class="input-block-level" value="<?php echo $username; ?>">
+  <br/>
 	<label>Full Name *</label>
-    <input name="full_name" type="text" placeholder="Type something…" class="input-block-level" value="<?php echo $fullname; ?>" >
+    <input name="full_name" type="text" placeholder="Your full name…" class="input-block-level" value="<?php echo $fullname; ?>">
 	<br/>
 	<label>Location </label>
     <input name="location" type="text" placeholder="Type something…" class="input-block-level" value="<?php echo $location; ?>">
