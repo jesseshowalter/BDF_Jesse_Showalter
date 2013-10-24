@@ -1,6 +1,6 @@
 <?php
 
-//Connection to the mysql Server by - tutbuzz.com
+//Connection to the mysql Server
 
 define('DB_SERVER', 'localhost'); // mysql hostname, usually localhost
 define('DB_USERNAME', 'root'); // mysql username

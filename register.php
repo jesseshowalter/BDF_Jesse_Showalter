@@ -1,5 +1,6 @@
+<div class="welcomepage">
 <?php include ('views/header.php'); ?> 
-
+</div>
 
 <?php
 //Gets the form submitted data
@@ -135,7 +136,7 @@ echo '
 
     <button type="submit" class="button">Register Now</button>
     </br>
-    <a class="button" href="index.php" > ← Sign In </a>
+    <a class="button" href="signin.php" > ← Sign In </a>
 
     </form>
   </div> <!--jumbotron -->

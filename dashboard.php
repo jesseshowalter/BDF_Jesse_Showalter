@@ -24,7 +24,6 @@ $gender = $match_value['gender'];
 $location = $match_value['location'];
 $user_id = $match_value['id'];
 
-$user_id = $match_value['id'];
 ?>
 	
 

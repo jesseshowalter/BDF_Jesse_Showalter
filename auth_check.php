@@ -31,7 +31,7 @@ header("location:dashboard.php");
 else {
     echo '
     <script language="javascript" type="text/javascript">
-window.location.href="index.php?message=1";
+window.location.href="signin.php?message=1";
 </script>';
 
 }

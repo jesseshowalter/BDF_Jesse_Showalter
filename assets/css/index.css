@@ -1090,6 +1090,11 @@ footer div #meta div:nth-child(2) a:nth-child(2) {
 	margin-top:15px;
 }
 
+.centerButton{
+  float:none !important;
+  display: block !important;
+  margin:0 auto !important;
+}
 
 
 
@@ -1248,8 +1253,10 @@ ul.controls li a:hover{
 
 
 
-
-
-
+.medo{
+  width:70%;
+  box-shadow: 0 0 10px #AAA;
+  margin:60px 0;
+}
 
 
