@@ -1,0 +1,46 @@
+<?php
+//place this code on top of all the pages which you need to authenticate
+
+//--- Authenticate code begins here ---
+session_start(); 
+//checks if the login session is true
+if(!session_is_registered(username)){
+header("location:index.php");
+}
+$username = $_SESSION['username'];
+
+// --- Authenticate code ends here ---
+?>
+<div id="dashboard_main">
+<?php include ('views/header.php'); ?> 
+</div>
+
+<?php
+$delete = $_GET['delete'];
+$document_get = mysql_query("SELECT * FROM users WHERE username='$username'");
+$match_value = mysql_fetch_array($document_get);
+$fullname = $match_value['fullname'];
+$gender = $match_value['gender'];
+$location = $match_value['location'];
+$user_id = $match_value['id'];
+
+$user_id = $match_value['id'];
+?>
+
+
+<html>
+<body>
+    <table>
+      <tr>
+        <th>Username</th>
+        <th>Location</th>
+      </tr>
+      <?php foreach($members as $m): ?>
+      <tr>
+        <tr><?php echo $m['username']; ?>
+        <tr><?php echo $m['location']; ?>
+      </tr>
+      <?php endforeach; ?>
+    <table>
+</body>
+</html>
